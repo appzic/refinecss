@@ -36,7 +36,16 @@ npm i -D refinecss
 ## 💻 Command-line
 
 ```
+Post build unused css remover
+Usage: refinecss <directory of final build> [options]
 
+Options:
+  --help     Show help                                                 [boolean]
+  --version  Show version number                                       [boolean]
+
+Examples:
+  refinecss ./out  with the directory of final build.
+                   (default build directory: ./dist)
 ```
 
 ## 🙏 Contributing
