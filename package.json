@@ -12,6 +12,13 @@
 		"clean": "rimraf ./lib",
 		"format": "prettier --write ."
 	},
+	"keywords": [
+		"css",
+		"purifycss",
+		"unusedcss",
+		"purgecss",
+		"postbuild"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/appzic/refinecss.git"
