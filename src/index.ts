@@ -51,7 +51,7 @@ class RefineCss {
 
 					// write css file and getsize
 					const cssContent: string = css.stringify(filteredCssObj, {
-						compress: f.isMinify,
+						compress: true,
 					});
 					return this.writeFile(f.path, cssContent).then((fileSize) => {
 						return {
