@@ -19,9 +19,14 @@
 
 ## 📖 Table of Contents
 
-## ☀️ Introduction
-
-## 🔥 Features
+- [📖 Table of Contents](#-table-of-contents)
+- [🚀 Getting Started](#-getting-started)
+  - [Installation](#installation)
+  - [Remove unused css](#remove-unused-css)
+- [💻 Command-line](#-command-line)
+- [🙏 Contributing](#-contributing)
+- [❤️ Contributors](#️-contributors)
+- [🛡️ License](#️-license)
 
 ## 🚀 Getting Started
 
@@ -32,6 +37,20 @@ We recommend installing RefineCSS as a dev dependency
 ```bash
 npm i -D refinecss
 ```
+
+### Remove unused css
+
+After your final build, you can run the following command to remove unused CSS
+
+```
+refinecss <build directory>
+```
+
+Defalut build directory is `./dir`
+
+After removing unused CSS, the results are displayed on the console.
+
+![refinecss results](https://user-images.githubusercontent.com/64678612/210082324-b7768f87-8154-47a7-914f-6b87b20122ca.png)
 
 ## 💻 Command-line
 
