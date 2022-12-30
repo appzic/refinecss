@@ -1,7 +1,7 @@
 {
 	"name": "refinecss",
 	"version": "0.0.0",
-	"description": "",
+	"description": "Post build unused css remover",
 	"main": "lib/index.js",
 	"bin": {
 		"refinecss": "lib/cli.js"
