@@ -46,8 +46,6 @@ After your final build, you can run the following command to remove unused CSS
 refinecss <build directory>
 ```
 
-Defalut build directory is `./dir`
-
 After removing unused CSS, the results are displayed on the console.
 
 ![refinecss results](https://user-images.githubusercontent.com/64678612/210082324-b7768f87-8154-47a7-914f-6b87b20122ca.png)
@@ -59,12 +57,11 @@ Post build unused css remover
 Usage: refinecss <directory of final build> [options]
 
 Options:
-  --help     Show help                                                 [boolean]
-  --version  Show version number                                       [boolean]
+  --help                Show help                                       [boolean]
+  --version             Show version number                             [boolean]
 
 Examples:
-  refinecss ./out  with the directory of final build.
-                   (default build directory: ./dist)
+  refinecss ./dist       with the directory of final build.
 ```
 
 ## 🙏 Contributing

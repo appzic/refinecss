@@ -7,10 +7,7 @@ const yarg = yargs
 	.usage(
 		"Post build unused css remover\nUsage: $0 <directory of final build> [options]"
 	)
-	.example(
-		"$0 ./out",
-		"with the directory of final build.\n (default build directory: ./dist)"
-	);
+	.example("$0 ./dist", "with the directory of final build.");
 
 main();
 
