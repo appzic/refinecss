@@ -75,7 +75,7 @@ class RefineCss {
 				}
 
 				const inputFiles: Array<inputFile> = filePaths.map((filePath) => {
-					const extention: string = filePath.split(".").pop() || "";
+					const extention: string = this.getExtention(filePath);
 					const content: string = this.readFile(filePath);
 					const size: number = this.getFileSize(filePath);
 					let isMinify: boolean = false;
@@ -253,6 +253,10 @@ class RefineCss {
 
 	private getFileSize(filePath: string): number {
 		return fs.statSync(filePath).size;
+	}
+
+	private getExtention(filePath: string): string {
+		return filePath.split(".").pop() || "";
 	}
 
 	private isMinify(content: string): boolean {
