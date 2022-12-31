@@ -4,7 +4,7 @@
 
 This project requires [Node.js](https://nodejs.org/en/).
 
-1. Fork this repo on [github](https://github.com/appzic/elementid).
+1. Fork this repo on [github](https://github.com/appzic/refinecss).
 2. Clone locally.
 3. From your local repro run `npm install`.
 4. Do your modifications
