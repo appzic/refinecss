@@ -267,6 +267,10 @@ class RefineCss {
 		return `${Math.round((fileSize / 1024) * 100) / 100} kb`;
 	}
 
+	private getRelativePath(absPath: string): string {
+		return absPath.replace(this._projectPath, ".");
+	}
+
 	private async printResults(
 		outputData: Array<Promise<outputCssFile>>
 	): Promise<void> {
@@ -296,7 +300,7 @@ class RefineCss {
 		dataObjects.forEach((dataObj) => {
 			p.addRow(
 				{
-					path: dataObj.path.replace(this._projectPath, "."),
+					path: this.getRelativePath(dataObj.path),
 					inputSize: this.toKB(dataObj.inputSize),
 					outputSize: this.toKB(dataObj.outputSize),
 				},
